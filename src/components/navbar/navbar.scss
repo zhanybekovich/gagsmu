@@ -2,6 +2,13 @@
   padding: 20px 0;
   background-color: transparent;
   color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  background-color: transparent;
+  transition: all 0.4s ease-in-out;
 
   &-inner {
     display: flex;

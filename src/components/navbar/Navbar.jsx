@@ -22,7 +22,9 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
-  window.addEventListener("scroll", handleScroll);
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", handleScroll);
+  }
 
   return (
     <nav className={stickyNav ? "navbar--active" : "navbar"}>
@@ -41,12 +43,12 @@ const Navbar = () => {
               <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
             </svg>
           </button>
-          <ul className={menuOpen ? "navbar-menu" : "navbar-menu--active"}>
+          <ul className={menuOpen ? "navbar-menu--active" : "navbar-menu"}>
             {links.map((link, index) => (
               <li key={index + link}>
-                <Link className="navbar-link" to={link}>
+                <a className="navbar-link" href={`#${link}`}>
                   {link}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
