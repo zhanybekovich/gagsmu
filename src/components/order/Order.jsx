@@ -51,7 +51,9 @@ const Order = () => {
           </motion.div>
           <motion.div custom={3} variants={animation} className="order-col">
             <p className="order-icon">
-              «Кыргыз Республикасынын Жергиликтүү жамаатарынын Типтүү уставы»
+              <a href="../../../static/ustav.docx" download>
+                «Кыргыз Республикасынын Жергиликтүү жамаатарынын Типтүү уставы»
+              </a>
             </p>
           </motion.div>
           <motion.div custom={3} variants={animation} className="order-col">
