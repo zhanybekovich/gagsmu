@@ -13,9 +13,13 @@
 
   &-inner {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-row-gap: 60px;
     grid-column-gap: 20px;
+
+    @media screen and (min-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &-col {
@@ -26,8 +30,10 @@
   }
 
   &-col-title {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    @media screen and (min-width: 600px) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
   }
 
   &-icon {
