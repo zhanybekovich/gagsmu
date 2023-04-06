@@ -1,0 +1,34 @@
+.about {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  color: #fff;
+  text-align: center;
+
+  &-title {
+    text-transform: uppercase;
+    width: 95%;
+    margin: 0 auto;
+    font-weight: 600;
+    margin-bottom: 48px;
+    font-size: 24px;
+    font-family: "Roboto Slab", serif;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+
+  &-subtitle {
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  &-img {
+    padding: 20px;
+    background-color: #fff;
+    width: 150px;
+    border-radius: 15px;
+    margin: 0 auto 25px;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.9);
+  }
+}
