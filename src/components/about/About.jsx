@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.scss";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import emblem from "../../../static/img/National_emblem.png";
 
 const About = () => {
