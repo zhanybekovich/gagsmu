@@ -2,15 +2,19 @@ import * as React from "react";
 import "../styles/styles.scss";
 import Navbar from "../components/navbar/Navbar";
 import About from "../components/about/About";
+import Order from "../components/order/Order";
 
 const IndexPage = () => {
   return (
-    <main>
+    <>
       <header className="header">
         <Navbar />
         <About />
       </header>
-    </main>
+      <main>
+        <Order />
+      </main>
+    </>
   );
 };
 
