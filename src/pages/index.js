@@ -3,6 +3,7 @@ import "../styles/styles.scss";
 import Navbar from "../components/navbar/Navbar";
 import About from "../components/about/About";
 import Order from "../components/order/Order";
+import Charter from "../components/charter/Charter";
 
 const IndexPage = () => {
   return (
@@ -13,6 +14,7 @@ const IndexPage = () => {
       </header>
       <main>
         <Order />
+        <Charter />
       </main>
     </>
   );
