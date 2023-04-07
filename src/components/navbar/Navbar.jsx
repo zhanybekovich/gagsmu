@@ -4,7 +4,23 @@ import { Link } from "gatsby";
 
 import "./navbar.scss";
 
-const links = ["Буйруктар", "Усулдук көрсөтмөлөр", "Типтүү устав", "Этаптар"];
+const links = [
+  {
+    id: 1,
+    path: "order",
+    text: "Буйруктар",
+  },
+  {
+    id: 2,
+    path: "charter",
+    text: "Типтүү устав",
+  },
+  {
+    id: 3,
+    path: "steps",
+    text: "Этаптар",
+  },
+];
 
 const Navbar = () => {
   const [stickyNav, setStickyNav] = useState(false);
@@ -46,8 +62,8 @@ const Navbar = () => {
           <ul className={menuOpen ? "navbar-menu--active" : "navbar-menu"}>
             {links.map((link, index) => (
               <li key={index + link}>
-                <a className="navbar-link" href={`#${link}`}>
-                  {link}
+                <a className="navbar-link" href={`#${link.path}`}>
+                  {link.text}
                 </a>
               </li>
             ))}
