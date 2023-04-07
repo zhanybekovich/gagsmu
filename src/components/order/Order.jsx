@@ -23,6 +23,7 @@ const Order = () => {
       whileInView="visible"
       viewport={{ amount: 0.3 }}
       className="order"
+      id="order"
     >
       <div className="container">
         <motion.h2
@@ -44,8 +45,7 @@ const Order = () => {
             <h3 className="order-icon">
               Кыргыз Республикасынын Министрлер Кабинетине караштуу мамлекеттик
               кызмат жана жергиликтүү өз алдынча башкаруу иштери боюнча
-              мамлекеттик агенттиктин
-              <br />
+              мамлекеттик агенттиктин{" "}
               <strong>2022-жылдын 12-декабрындагы № 279 буйругу</strong>
             </h3>
           </motion.div>
@@ -58,8 +58,10 @@ const Order = () => {
           </motion.div>
           <motion.div custom={3} variants={animation} className="order-col">
             <p className="order-icon">
-              Жергиликтүү жамааттын Типтүү уставынын айрым жоболорун турмушка
-              ашыруу боюнча усулдук көрсөтмө
+              <a href="../../../static/ustav-korsotmo.docx" download>
+                Жергиликтүү жамааттын Типтүү уставынын айрым жоболорун турмушка
+                ашыруу боюнча усулдук көрсөтмө
+              </a>
             </p>
           </motion.div>
         </div>
