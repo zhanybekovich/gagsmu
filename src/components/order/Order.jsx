@@ -22,7 +22,7 @@ const Order = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.3 }}
-      className="order"
+      className="section order"
       id="order"
     >
       <div className="container">
