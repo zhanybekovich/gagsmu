@@ -6,7 +6,8 @@ const Stage1 = () => {
     <section className="section stage-1">
       <div className="container">
         <h2 className="section-title">
-          Жергиликтүү жамааттарынын уставын <span>ишке ашыруу этаптары</span>
+          Жергиликтүү жамааттарынын уставын <br />
+          <span>ишке ашыруу этаптары</span>
         </h2>
         <div className="stage-top">
           <h3 className="stage-title">1-Этап</h3>

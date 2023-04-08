@@ -1,7 +1,13 @@
 .stage-1 {
   // background-color: #f7f8fa;
   h2 {
+    font-size: 44px;
     margin-bottom: 30px;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+    }
   }
 
   &-steps {
