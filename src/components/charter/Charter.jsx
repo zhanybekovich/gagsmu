@@ -44,7 +44,8 @@ const Charter = () => {
         <div className="charter-download">
           <motion.a
             className="charter-link"
-            href="/"
+            href="../../../static/ustav.docx"
+            download
             custom={3}
             variants={animate}
           >
