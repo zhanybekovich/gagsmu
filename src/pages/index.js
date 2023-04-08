@@ -4,6 +4,7 @@ import Navbar from "../components/navbar/Navbar";
 import About from "../components/about/About";
 import Order from "../components/order/Order";
 import Charter from "../components/charter/Charter";
+import Stage1 from "../components/stage1/Stage1";
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <main>
         <Order />
         <Charter />
+        <Stage1 />
       </main>
     </>
   );
