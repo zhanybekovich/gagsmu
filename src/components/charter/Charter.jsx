@@ -9,7 +9,7 @@ const animate = {
   visible: (custom) => ({
     opacity: 1,
     transition: {
-      delay: custom * 0.4,
+      delay: custom * 0.3,
     },
   }),
 };
@@ -41,17 +41,40 @@ const Charter = () => {
           адеп-ахлакты чыңдоону, ички жашоо-тиричилигинин принциптерин жана
           эрежелерин киргизүүгө багытталган
         </motion.p>
-        <div className="charter-download">
-          <motion.a
-            className="charter-link"
-            href="../../../static/ustav.docx"
-            download
-            custom={3}
-            variants={animate}
-          >
-            Уставды көчүрүү
-          </motion.a>
-        </div>
+        <motion.div className="charter-info" custom={3} variants={animate}>
+          <h3>Жергиликтүү жамааттын типтүү уставы 8 бөлүктөн турат</h3>
+          <ol>
+            <li>Жалпы жоболор</li>
+            <li>Жергиликтүү өз алдынча башкаруу органдары </li>
+            <li>Жергиликтүү маанидеги маселелер </li>
+            <li>
+              Жергиликтүү жамааттын жергиликтүү өз алдынча башкарууну жүзөгө
+              ашырууга түз катышуу формалары
+            </li>
+            <li>
+              Жергиликтүү жамааттын ички жашоо-тиричилигинин негизги принциптери
+              жана эрежелери
+            </li>
+            <li>
+              Жергиликтүү жамааттын башка тараптар (субъектилер) менен алака
+              жүргүзүүсүнүн тартиби
+            </li>
+            <li>
+              Жергиликтүү жамааттарда жарандардын өз алдынча уюмдашышынын
+              экономикалык – чарбалык негиздери
+            </li>
+            <li>Корутунду жоболор</li>
+          </ol>
+          <div className="charter-download">
+            <motion.a
+              className="charter-link"
+              href="../../../static/ustav.docx"
+              download
+            >
+              Уставды көчүрүү
+            </motion.a>
+          </div>
+        </motion.div>
       </div>
     </motion.section>
   );
