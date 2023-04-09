@@ -1,0 +1,55 @@
+.stage-2 {
+  background-color: #f7f8fa;
+
+  &-info {
+    font-size: 24px;
+    font-weight: 700;
+
+    span {
+      color: #ff8500;
+    }
+  }
+
+  &-item {
+    margin-bottom: 15px;
+    font-size: 18px;
+
+    &::after {
+      content: ";";
+    }
+  }
+
+  &-final {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 35px;
+
+    &::before {
+      content: "*";
+      color: #ff8500;
+      font-size: 60px;
+      position: absolute;
+      top: -5px;
+      left: 0;
+    }
+  }
+
+  ul {
+    position: relative;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      background-image: url("../../../static/img/people.jpg");
+      background-size: 45%;
+      background-repeat: no-repeat;
+      background-position: right 0 top 15px;
+    }
+  }
+
+  li {
+    @media screen and (min-width: 768px) {
+      padding-right: 50%;
+    }
+  }
+}
