@@ -45,7 +45,11 @@ const Stage1 = () => {
             ашыруу боюнча усулдук көрсөтмө
           </motion.p>
         </div>
-        <motion.p className="stage-1-final" custom={6} variants={animation}>
+        <motion.p
+          className="stage-box stage-1-final"
+          custom={6}
+          variants={animation}
+        >
           Айыл өкмөт же шаар мэринин чечими менен уставдын долбоорун иштеп чыгуу
           боюнча жумушчу, демилгечи топтор түзүлөт (Устав 41 пункт)
         </motion.p>
