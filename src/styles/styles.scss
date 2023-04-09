@@ -73,3 +73,16 @@ img {
     background-image: url("../../static/img/icon-step.svg");
   }
 }
+
+.stage-box {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 7px;
+  background-color: #154599;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+}
