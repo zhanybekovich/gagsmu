@@ -17,7 +17,7 @@ const links = [
   },
   {
     id: 3,
-    path: "steps",
+    path: "stages",
     text: "Этаптар",
   },
 ];
