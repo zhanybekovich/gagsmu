@@ -21,7 +21,7 @@ const Order = () => {
     <motion.section
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.3 }}
+      viewport={{ amount: 0.2 }}
       className="section order"
       id="order"
     >

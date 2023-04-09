@@ -1,31 +1,56 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./stage1.scss";
+
+const animation = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    opacity: 1,
+    transition: {
+      delay: custom * 0.4,
+    },
+  }),
+};
 
 const Stage1 = () => {
   return (
-    <section className="section stage-1">
+    <motion.section
+      id="stages"
+      className="section stage-1"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2 }}
+    >
       <div className="container">
-        <h2 className="section-title">
+        <motion.h2 className="section-title" custom={1} variants={animation}>
           Жергиликтүү жамааттарынын уставын <br />
           <span>ишке ашыруу этаптары</span>
-        </h2>
+        </motion.h2>
         <div className="stage-top">
-          <h3 className="stage-title">1-Этап</h3>
+          <motion.h3 className="stage-title" custom={2} variants={animation}>
+            1-Этап
+          </motion.h3>
         </div>
         <div className="stage-1-steps">
-          <p>Агенттиктин буйругу</p>
-          <p>Жергиликтүү жамааттын Типтүү уставы</p>
-          <p>
+          <motion.p custom={3} variants={animation}>
+            Агенттиктин буйругу
+          </motion.p>
+          <motion.p custom={4} variants={animation}>
+            Жергиликтүү жамааттын Типтүү уставы
+          </motion.p>
+          <motion.p custom={5} variants={animation}>
             Жергиликтүү жамааттын Типтүү уставынын айрым жоболорун турмушка
             ашыруу боюнча усулдук көрсөтмө
-          </p>
+          </motion.p>
         </div>
-        <p className="stage-1-final">
+        <motion.p className="stage-1-final" custom={6} variants={animation}>
           Айыл өкмөт же шаар мэринин чечими менен уставдын долбоорун иштеп чыгуу
           боюнча жумушчу, демилгечи топтор түзүлөт (Устав 41 пункт)
-        </p>
+        </motion.p>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
