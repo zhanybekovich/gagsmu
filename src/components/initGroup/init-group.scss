@@ -9,7 +9,8 @@
     &::before {
       content: "\27A5";
       position: absolute;
-      top: -12px;
+      top: 50%;
+      transform: translateY(-50%);
       left: 0;
       font-size: 45px;
       color: #ff8500;
