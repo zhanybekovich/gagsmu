@@ -7,6 +7,7 @@ import Charter from "../components/charter/Charter";
 import Stage1 from "../components/stage1/Stage1";
 import Stage2 from "../components/stage2/Stage2";
 import InitGroup from "../components/initGroup/InitGroup";
+import Stage3 from "../components/stage3/Stage3";
 
 const IndexPage = () => {
   return (
@@ -21,6 +22,7 @@ const IndexPage = () => {
         <Stage1 />
         <Stage2 />
         <InitGroup />
+        <Stage3 />
       </main>
     </>
   );
