@@ -7,7 +7,7 @@ import Charter from "../components/charter/Charter";
 import Stage1 from "../components/stage1/Stage1";
 import Stage2 from "../components/stage2/Stage2";
 import InitGroup from "../components/initGroup/InitGroup";
-import Stage3 from "../components/stage3/Stage3";
+import SimpleStage from "../components/simpleStage/SimpleStage";
 
 const IndexPage = () => {
   return (
@@ -22,7 +22,19 @@ const IndexPage = () => {
         <Stage1 />
         <Stage2 />
         <InitGroup />
-        <Stage3 />
+        <SimpleStage
+          title={"3-Этап"}
+          info={
+            "Аймактардагы көчөлөргө, кварталдарга  дайындалган демилгечи топтор ар бири өздөрүнүн аймактарындагы жашоочулардан келип түшкөн сунуштарды жумушчу топко беришет"
+          }
+          bgClass={"bg-dark"}
+        />
+
+        <SimpleStage
+          title={"4-Этап"}
+          info={"Уставдын долбоорун жумушчуу топ иштеп чыгат"}
+          bgClass={"bg-light"}
+        />
       </main>
     </>
   );

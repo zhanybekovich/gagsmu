@@ -1,6 +1,4 @@
-.stage-3 {
-  background-color: #f7f8fa;
-
+.simple-stage {
   &-title {
     margin-bottom: 20px;
   }
@@ -21,5 +19,9 @@
     p {
       margin-bottom: 0;
     }
+  }
+
+  &-info.dark {
+    background-color: #f7f8fa;
   }
 }
