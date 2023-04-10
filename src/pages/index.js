@@ -8,6 +8,7 @@ import Stage1 from "../components/stage1/Stage1";
 import Stage2 from "../components/stage2/Stage2";
 import InitGroup from "../components/initGroup/InitGroup";
 import SimpleStage from "../components/simpleStage/SimpleStage";
+import Footer from "../components/footer/Footer";
 
 const IndexPage = () => {
   return (
@@ -35,7 +36,50 @@ const IndexPage = () => {
           info={"Уставдын долбоорун жумушчуу топ иштеп чыгат"}
           bgClass={"bg-light"}
         />
+        <SimpleStage
+          title={"5-Этап"}
+          info={
+            "Жергиликтүү курултай  же жыйын дайындалып, жергиликтүү уставдын долбоору  курултайда  талкууланат"
+          }
+          bgClass={"bg-dark"}
+        />
+        <SimpleStage
+          title={"6-Этап"}
+          info={
+            "Жергиликтүү курултайда же жыйында, жергиликтүү жамааттардын уставы жактырылат"
+          }
+          bgClass={"bg-light"}
+        />
+        <SimpleStage
+          title={"7-Этап"}
+          info={
+            "Жергиликтүү курултайда же жыйында жактырылган устав, Жергиликтүү кеңештин сессиясында бекитилет."
+          }
+          bgClass={"bg-dark"}
+        />
+        <SimpleStage
+          title={"8-Этап"}
+          info={
+            "Жергиликтүү жамааттын уставын бекиткен Жергиликтүү кеңештин сессиясынын чечими  Мамлекеттик реестрине киргизүү үчүн уставдын текстин тиркөө менен Кыргыз Республикасынын Юстиция министрлигинин аймактык бөлүмүнө жөнөтүлөт"
+          }
+          bgClass={"bg-light"}
+        />
+        <SimpleStage
+          title={"9-Этап"}
+          info={
+            "Уставты колдонууга киргизүү боюнча чогулуштарды, жыйындарды өткөрүү жергиликтүү жашоочулар менен чогулуш, жыйын уюштуруу"
+          }
+          bgClass={"bg-dark"}
+        />
+        <SimpleStage
+          title={"10-Этап"}
+          info={
+            "Кабыл алынган жергиликтүү жамааттардын уставынын аткарылышын уюштуруу көзөмөлдөө (демилгечи топторго жүктөлөт)"
+          }
+          bgClass={"bg-light"}
+        />
       </main>
+      <Footer />
     </>
   );
 };
