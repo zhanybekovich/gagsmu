@@ -14,7 +14,7 @@ const animation = {
   }),
 };
 
-const SimpleStage = ({ title, info, bgClass }) => {
+const SimpleStage = ({ title, info, bgClass, document, documentUrl }) => {
   return (
     <motion.section
       className={`section simple-stage ${bgClass}`}
@@ -41,6 +41,15 @@ const SimpleStage = ({ title, info, bgClass }) => {
             variants={animation}
           >
             <p className="init-group-info">{info}</p>
+            {document && documentUrl ? (
+              <p>
+                <strong>
+                  <a href={documentUrl} download>
+                    {document}
+                  </a>
+                </strong>
+              </p>
+            ) : null}
           </motion.div>
         </div>
       </div>

@@ -20,13 +20,14 @@ const Charter = () => {
       className="section charter"
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.3 }}
+      viewport={{ amount: 0.1 }}
     >
       <div className="container">
         <motion.h2
           className="section-title charter-title"
           custom={1}
           variants={animate}
+          id="charter"
         >
           Кыргыз Республикасынын Жергиликтүү жамааттарынын <br />
           <span>Типтүү уставы</span>
